@@ -31,7 +31,10 @@ function CardDetails() {
     <section>
       <h2>{zodiac.zodiac}</h2>
       <div>
-        <img src={zodiac.image_url} alt={zodiac.zodiac} />
+        <img
+          src={`${baseUrl}/images/${zodiac.image_url}`}
+          alt={zodiac.zodiac}
+        />
       </div>
 
       <div>

@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import photosRoutes from "./routes/zodiac.js";
 import "dotenv/config";
-
+import path from "path";
 const port = process.env.PORT ?? 5050;
 
 const app = express();
