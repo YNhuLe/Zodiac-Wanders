@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import "dotnet/config";
+import "dotenv/config";
 
 const port = process.env.PORT ?? 5050;
 
