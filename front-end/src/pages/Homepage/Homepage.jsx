@@ -8,7 +8,6 @@ function Homepage() {
     <>
       <Header />
       <ZodiacCard />
-      <Header />
       <Footer />
     </>
   );

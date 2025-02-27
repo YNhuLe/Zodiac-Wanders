@@ -73,14 +73,16 @@ function ZodiacCard() {
 
   return (
     <section className="section">
-      {photos.map((photo) => (
-        <Link key={photo.id} to={`/photos/${photo.id}`} className="card-link">
-          <div className="card">
-            <p className="card__zodiac">{photo.zodiac}</p>
-            <p className="card__date">{photo.date_range}</p>
-          </div>
-        </Link>
-      ))}
+      <div className="allcards">
+        {photos.map((photo) => (
+          <Link key={photo.id} to={`/photos/${photo.id}`} className="card-link">
+            <div className="card">
+              <p className="card__zodiac">{photo.zodiac}</p>
+              <p className="card__date">{photo.date_range}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </section>
   );
 }
