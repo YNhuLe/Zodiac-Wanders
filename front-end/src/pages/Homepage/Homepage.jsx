@@ -9,8 +9,6 @@ function Homepage() {
     <>
       <Header />
       <ZodiacCard />
-      {/* <Header /> */}
-      <CardDetails />
       <Footer />
     </>
   );
