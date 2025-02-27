@@ -1,12 +1,13 @@
 import React from 'react'
+import "./Header.scss"
 
 function Header() {
   return (
     <div className='header'>
         <div className="header__logo">
-            <p className="header-title">
-                Zodiac Wonders
-            </p>
+            <a href="/" className="header-title">
+             Zodiac Wonders
+            </a>
         </div>
 
         <div className="header__info">
