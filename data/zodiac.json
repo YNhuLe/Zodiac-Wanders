@@ -128,7 +128,7 @@
     {
         "zodiac": "Libra",
         "flower": "Rose",
-        "image_url": "https://example.com/rose.jpg",
+        "image_url": "Libra-rose.jpg",
         "description": "Roses symbolize Libra’s grace, balance, and beauty.",
         "date_range": "September 23 - October 22",
         "personality": {
@@ -151,7 +151,7 @@
     {
         "zodiac": "Scorpio",
         "flower": "Chrysanthemum",
-        "image_url": "https://example.com/chrysanthemum.jpg",
+        "image_url": "Scorpio_Chrysanthemum.jpg",
         "description": "Chrysanthemum represents Scorpio’s intensity, passion, and loyalty.",
         "date_range": "October 23 - November 21",
         "personality": {
@@ -174,7 +174,7 @@
     {
         "zodiac": "Sagittarius",
         "flower": "Carnation",
-        "image_url": "https://example.com/carnation.jpg",
+        "image_url": "Sagittarius-Carnation.jpg",
         "description": "Carnations symbolize Sagittarius’ adventurous and free-spirited nature.",
         "date_range": "November 22 - December 21",
         "personality": {
@@ -197,7 +197,7 @@
     {
         "zodiac": "Capricorn",
         "flower": "Pine",
-        "image_url": "https://example.com/pine.jpg",
+        "image_url": "Capricorn_Pine.jpeg",
         "description": "Pine represents Capricorn’s ambition and determination.",
         "date_range": "December 22 - January 19",
         "personality": {
@@ -220,7 +220,7 @@
     {
         "zodiac": "Aquarius",
         "flower": "Orchid",
-        "image_url": "https://example.com/orchid.jpg",
+        "image_url": "Aquarius_Orchid.jpg",
         "description": "Orchid symbolizes Aquarius’ uniqueness, innovation, and independence.",
         "date_range": "January 20 - February 18",
         "personality": {
@@ -243,7 +243,7 @@
     {
         "zodiac": "Pisces",
         "flower": "Water Lily",
-        "image_url": "https://example.com/waterlily.jpg",
+        "image_url": "Pisces_WaterLily.jpg",
         "description": "Water Lilies represent Pisces’ dreamy and compassionate nature.",
         "date_range": "February 19 - March 20",
         "personality": {
