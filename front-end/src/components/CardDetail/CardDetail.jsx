@@ -35,8 +35,7 @@ function CardDetails() {
       <div className="card-details__image-container">
         <img
           className="card-details__image"
-          src={`${baseUrl}/images/${`/images/${zodiac.image_url}`}
-         `}
+          src={`${baseUrl}/images/${zodiac.image_url}`}
           alt={zodiac.zodiac}
         />
       </div>
