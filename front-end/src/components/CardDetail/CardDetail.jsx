@@ -29,7 +29,11 @@ function CardDetails() {
   }
 
   return (
-    <section className="card-details">
+    <>
+     <a href="/" className="header-title">
+             Zodiac Wonders
+            </a>
+       <section className="card-details">
       <h2 className="card-details__title">{zodiac.zodiac}</h2>
 
       <div className="card-details__image-container">
@@ -86,6 +90,7 @@ function CardDetails() {
         </p>
       </div>
     </section>
+    </>
   );
 }
 
