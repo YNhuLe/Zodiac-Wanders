@@ -1,0 +1,279 @@
+[
+  {
+    "id": "1",
+    "zodiac": "Aries",
+    "flower": "Honeysuckle",
+    "image_url": "Aries_honeysuckle.jpg",
+    "description": "Honeysuckle represents Aries' energy and passion.",
+    "date_range": "March 21 - April 19",
+    "personality": {
+      "summary": "Aries are bold, ambitious, and full of energy. They thrive on challenges and love being first in everything.",
+      "traits": [
+        "Confident and fearless in pursuing goals",
+        "Adventurous and always seeking new experiences",
+        "Energetic with a strong desire to take action"
+      ]
+    },
+    "best_careers": ["Entrepreneur", "Athlete", "Firefighter"],
+    "compatibility": {
+      "best_matches": ["Leo", "Sagittarius", "Gemini", "Aquarius"],
+      "challenging_matches": ["Cancer", "Capricorn"]
+    },
+    "comments": []
+  },
+  {
+    "id": "2",
+    "zodiac": "Taurus",
+    "flower": "Poppy",
+    "image_url": "Taurus_poppy.jpg",
+    "description": "Poppy reflects Taurus' beauty and strength.",
+    "date_range": "April 20 - May 20",
+    "personality": {
+      "summary": "Taurus individuals are reliable, patient, and deeply connected to their senses.",
+      "traits": [
+        "Loyal and committed in relationships",
+        "Hardworking and determined to achieve goals",
+        "Practical and prefers a stable, secure life"
+      ]
+    },
+    "best_careers": ["Chef", "Banker", "Real Estate Agent"],
+    "compatibility": {
+      "best_matches": ["Virgo", "Capricorn", "Cancer", "Pisces"],
+      "challenging_matches": ["Leo", "Aquarius"]
+    },
+    "comments": []
+  },
+  {
+    "id": "3",
+    "zodiac": "Gemini",
+    "flower": "Lavender",
+    "image_url": "Gemini_lavender.jpg",
+    "description": "Lavender symbolizes Gemini’s vibrant and expressive nature.",
+    "date_range": "May 21 - June 20",
+    "personality": {
+      "summary": "Geminis are curious, adaptable, and always seeking new experiences.",
+      "traits": [
+        "Highly intelligent and quick-witted",
+        "Excellent communicators and social butterflies",
+        "Adaptable and able to thrive in new environments"
+      ]
+    },
+    "best_careers": ["Journalist", "Writer", "Marketing Strategist"],
+    "compatibility": {
+      "best_matches": ["Libra", "Aquarius", "Aries", "Leo"],
+      "challenging_matches": ["Virgo", "Pisces"]
+    },
+    "comments": []
+  },
+  {
+    "id": "4",
+    "zodiac": "Cancer",
+    "flower": "White Rose",
+    "image_url": "cancer_whiterose.jpg",
+    "description": "White Roses reflect Cancer’s nurturing and loving nature.",
+    "date_range": "June 21 - July 22",
+    "personality": {
+      "summary": "Cancers are deeply intuitive and emotionally intelligent.",
+      "traits": [
+        "Compassionate and deeply caring",
+        "Highly intuitive and empathetic",
+        "Loyal and protective of loved ones"
+      ]
+    },
+    "best_careers": ["Psychologist", "Nurse", "Social Worker"],
+    "compatibility": {
+      "best_matches": ["Scorpio", "Pisces", "Taurus", "Virgo"],
+      "challenging_matches": ["Aries", "Libra"]
+    },
+    "comments": []
+  },
+  {
+    "id": "5",
+    "zodiac": "Leo",
+    "flower": "Sunflower",
+    "image_url": "Leo_sunflower.jpg",
+    "description": "Sunflower represents Leo’s warmth, charisma, and leadership.",
+    "date_range": "July 23 - August 22",
+    "personality": {
+      "summary": "Leos are confident, charismatic, and natural-born leaders.",
+      "traits": [
+        "Natural leader and loves being the center of attention",
+        "Warm-hearted and generous",
+        "Ambitious and determined"
+      ]
+    },
+    "best_careers": ["Actor", "CEO", "Politician"],
+    "compatibility": {
+      "best_matches": ["Aries", "Sagittarius", "Gemini", "Libra"],
+      "challenging_matches": ["Taurus", "Scorpio"]
+    },
+    "comments": []
+  },
+  {
+    "id": "6",
+    "zodiac": "Virgo",
+    "flower": "Morning Glory",
+    "image_url": "Virgo_morningglory.jpg",
+    "description": "Morning Glory symbolizes Virgo’s meticulous and analytical nature.",
+    "date_range": "August 23 - September 22",
+    "personality": {
+      "summary": "Virgos are practical, detail-oriented, and perfectionists.",
+      "traits": [
+        "Highly analytical and pays attention to details",
+        "Hardworking and dedicated",
+        "Loyal and reliable"
+      ]
+    },
+    "best_careers": ["Doctor", "Editor", "Scientist"],
+    "compatibility": {
+      "best_matches": ["Taurus", "Capricorn", "Cancer", "Scorpio"],
+      "challenging_matches": ["Gemini", "Sagittarius"]
+    },
+    "comments": []
+  },
+  {
+    "id": "7",
+    "zodiac": "Libra",
+    "flower": "Rose",
+    "image_url": "Libra-rose.jpg",
+    "description": "Roses symbolize Libra’s grace, balance, and beauty.",
+    "date_range": "September 23 - October 22",
+    "personality": {
+      "summary": "Libras are social, charming, and highly value harmony and relationships.",
+      "traits": [
+        "Diplomatic and seeks peace",
+        "Charming and enjoys socializing",
+        "Fair-minded and just",
+        "Appreciates beauty and art",
+        "Indecisive and struggles with choices"
+      ]
+    },
+    "best_careers": ["Diplomat", "Designer", "Lawyer"],
+    "compatibility": {
+      "best_matches": ["Gemini", "Aquarius", "Leo", "Sagittarius"],
+      "challenging_matches": ["Cancer", "Capricorn"]
+    },
+    "comments": []
+  },
+  {
+    "id": "8",
+    "zodiac": "Scorpio",
+    "flower": "Chrysanthemum",
+    "image_url": "Scorpio_Chrysanthemum.jpg",
+    "description": "Chrysanthemum represents Scorpio’s intensity, passion, and loyalty.",
+    "date_range": "October 23 - November 21",
+    "personality": {
+      "summary": "Scorpios are deeply emotional, passionate, and mysterious.",
+      "traits": [
+        "Passionate and deeply emotional",
+        "Loyal and protective",
+        "Ambitious and determined",
+        "Strong-willed and intense",
+        "Secretive and private"
+      ]
+    },
+    "best_careers": ["Detective", "Psychologist", "Surgeon"],
+    "compatibility": {
+      "best_matches": ["Cancer", "Pisces", "Virgo", "Capricorn"],
+      "challenging_matches": ["Leo", "Aquarius"]
+    },
+    "comments": []
+  },
+  {
+    "id": "9",
+    "zodiac": "Sagittarius",
+    "flower": "Carnation",
+    "image_url": "Sagittarius-Carnation.jpg",
+    "description": "Carnations symbolize Sagittarius’ adventurous and free-spirited nature.",
+    "date_range": "November 22 - December 21",
+    "personality": {
+      "summary": "Sagittarians are optimistic, curious, and always seeking new adventures.",
+      "traits": [
+        "Adventurous and loves to travel",
+        "Optimistic and fun-loving",
+        "Philosophical and loves deep conversations",
+        "Independent and values freedom",
+        "Honest and sometimes blunt"
+      ]
+    },
+    "best_careers": ["Travel Blogger", "Philosopher", "Adventure Guide"],
+    "compatibility": {
+      "best_matches": ["Aries", "Leo", "Aquarius", "Libra"],
+      "challenging_matches": ["Virgo", "Pisces"]
+    },
+    "comments": []
+  },
+  {
+    "id": "10",
+    "zodiac": "Capricorn",
+    "flower": "Pine",
+    "image_url": "Capricorn_Pine.jpeg",
+    "description": "Pine represents Capricorn’s ambition and determination.",
+    "date_range": "December 22 - January 19",
+    "personality": {
+      "summary": "Capricorns are disciplined, responsible, and highly goal-oriented.",
+      "traits": [
+        "Hardworking and focused on goals",
+        "Ambitious and driven",
+        "Practical and grounded",
+        "Loyal and reliable",
+        "Reserved and private"
+      ]
+    },
+    "best_careers": ["CEO", "Engineer", "Lawyer"],
+    "compatibility": {
+      "best_matches": ["Virgo", "Taurus", "Scorpio", "Pisces"],
+      "challenging_matches": ["Aries", "Libra"]
+    },
+    "comments": []
+  },
+  {
+    "id": "11",
+    "zodiac": "Aquarius",
+    "flower": "Orchid",
+    "image_url": "Aquarius_Orchid.jpg",
+    "description": "Orchid symbolizes Aquarius’ uniqueness, innovation, and independence.",
+    "date_range": "January 20 - February 18",
+    "personality": {
+      "summary": "Aquarians are progressive, creative, and always thinking ahead.",
+      "traits": [
+        "Innovative and forward-thinking",
+        "Independent and unconventional",
+        "Intellectual and loves to learn",
+        "Friendly and enjoys socializing",
+        "Eccentric and likes to stand out"
+      ]
+    },
+    "best_careers": ["Scientist", "Inventor", "Activist"],
+    "compatibility": {
+      "best_matches": ["Gemini", "Libra", "Aries", "Sagittarius"],
+      "challenging_matches": ["Taurus", "Scorpio"]
+    },
+    "comments": []
+  },
+  {
+    "id": "12",
+    "zodiac": "Pisces",
+    "flower": "Water Lily",
+    "image_url": "Pisces_WaterLily.jpg",
+    "description": "Water Lilies represent Pisces’ dreamy and compassionate nature.",
+    "date_range": "February 19 - March 20",
+    "personality": {
+      "summary": "Pisces are artistic, empathetic, and intuitive.",
+      "traits": [
+        "Compassionate and deeply caring",
+        "Creative and artistic",
+        "Intuitive and spiritually connected",
+        "Romantic and idealistic",
+        "Sensitive and easily hurt"
+      ]
+    },
+    "best_careers": ["Artist", "Musician", "Counselor"],
+    "compatibility": {
+      "best_matches": ["Cancer", "Scorpio", "Taurus", "Capricorn"],
+      "challenging_matches": ["Gemini", "Sagittarius"]
+    },
+    "comments": []
+  }
+]
+  
