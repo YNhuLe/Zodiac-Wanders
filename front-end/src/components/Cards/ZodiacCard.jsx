@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ZodiacCard.scss";
-
 function ZodiacCard() {
   const [photos, setPhotos] = useState([]);
   const baseUrl = import.meta.env.VITE_API_URL;
@@ -33,6 +32,7 @@ function ZodiacCard() {
             <div className="card">
               <p className="card__zodiac">{photo.zodiac}</p>
               <p className="card__date">{photo.date_range}</p>
+              <img src={photo.icon} alt="icons" className="card__icon" />
             </div>
           </Link>
         ))}

@@ -1,22 +1,19 @@
 import React from 'react'
 import "./Header.scss"
-
+import logo from "../../assets/images/logo.png";
 function Header() {
   return (
-    <div className='header'>
-        <div className="header__logo">
-            <a href="/" className="header-title">
-             Zodiac Wonders
-            </a>
-        </div>
-
+    <div className="header">
+      <div className="header__logo">
+        <a href="/" className="header-title">
+          <img src={logo} alt="logo" className="logo-img" />
+        </a>
         <div className="header__info">
-            <h1>
-                Explore the Magic of Your Zodiac
-            </h1>
+          <h1>Explore the Magic of Your Zodiac</h1>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Header

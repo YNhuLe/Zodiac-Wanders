@@ -23,17 +23,18 @@ function CardDetails() {
     };
     fetchDetails();
   }, [id]);
+console.log();
 
-  if (!zodiac) {
-    return <div className="loading">Loading photos...</div>;
-  }
+if (!zodiac) {
+  return <div className="loading">Loading photos...</div>;
+}
 
-  return (
-    <>
-     <a href="/" className="header-title">
-             Zodiac Wonders
-            </a>
-       <section className="card-details">
+return (
+  <div className="details">
+    <a href="/" className="header-title">
+      Zodiac Wonders
+    </a>
+    <section className="card-details">
       <h2 className="card-details__title">{zodiac.zodiac}</h2>
 
       <div className="card-details__image-container">
@@ -90,8 +91,8 @@ function CardDetails() {
         </p>
       </div>
     </section>
-    </>
-  );
+  </div>
+);
 }
 
 export default CardDetails;
