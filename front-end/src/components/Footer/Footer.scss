@@ -1,10 +1,14 @@
+@use "../../../styles/partials/mixin.scss" as *;
+@use "../../../styles/partials/variables.scss" as *;
+
+
 .footer{
     height: 300px;
     display: flex;
     justify-content: space-between;
-    padding-right: 250px;
 
 background-color: rgba(0, 0, 0, 0.5);
+@include flex(column, center, flex-start);
 
 }
 
@@ -14,16 +18,20 @@ background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 50px;
     align-self: center;
-         font-family: "Montserrat", sans-serif;
+  @include mobile-page-header;
      font-weight: 600;
 }
 
 .links{
     display: flex;
     gap: 40px;
-    align-self: center;
+   
     font-size: 20px;
-         font-family: "Montserrat", sans-serif;
+    @include mobile-footer-copy;
      font-weight: 600;
     color: white;
+    @include flex(column, center, flex-start);
+    &-items{
+     cursor: pointer;
+    }
 }

@@ -1,0 +1,134 @@
+@use "./variables" as *;
+@use "./typography";
+
+@mixin mobile-page-header {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: 900;
+}
+
+@mixin mobile-section-header {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+@mixin mobile-subheader-header {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+@mixin mobile-body-copy {
+  font-family: "Montserrat";
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+@mixin mobile-footer-copy {
+  font-family: "Montserrat";
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+@mixin mobile-label-button {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+@mixin tablet-desktop-wordmark-regular {
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+@mixin tablet-desktop-title-normal {
+  font-family: "Montserrat";
+  font-size: 3.25rem;
+  line-height: 4.125rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin tablet-desktop-title-italic {
+  font-family: "Montserrat";
+  font-size: 3.25rem;
+  line-height: 4.125rem;
+  font-weight: 300;
+  // font-style: italic;
+}
+
+@mixin tablet-desktop-heading-medium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  line-height: 1.875rem;
+  font-weight: 300;
+}
+
+@mixin tablet-desktop-body-copy-medium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+@mixin tablet-desktop-body-copy-light {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+@mixin tablet-desktop-small-body-copy-medium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  font-weight: 500;
+}
+
+@mixin tablet-desktop-label-medium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.0938rem;
+  font-weight: 500;
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop-xxl {
+  @media (min-width: $desktop-breakpoint-xxl) {
+    @content;
+  }
+}
+
+@mixin desktop-ultra {
+  @media (min-width: $desktop-breakpoint-ultra) {
+    @content;
+  }
+}
+
+// flex
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

@@ -1,9 +1,12 @@
+@use "../../../styles/partials/mixin.scss" as *;
+@use "../../../styles/partials/variables.scss" as *;
 body{
     // background: linear-gradient(to right, #562a75, #8c77a0, #4f4854);
        background-image: url(../../assets/images/bc.jpg);
 }
-.card-details {
-  max-width: 800px;
+.card{
+  &-details {
+  // max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
   // background: linear-gradient(to right, #a090ac, #8c77a0, #a582be);
@@ -18,6 +21,11 @@ border-radius: 1rem;
       box-shadow: 0 8px 32px 0 rgba(91, 16, 211, 0.7);
 
 }
+&__title{
+@include mobile-subheader-header;
+color: $primary-white;
+}
+}
 .details{
   margin-top: 3rem;
 }
@@ -25,15 +33,16 @@ border-radius: 1rem;
     font-size: 3rem;
     padding: 2rem;
     margin-top: 5rem;
-      font-family: "Montserrat", sans-serif;
-     font-weight: 600;
+    //   font-family: "Montserrat", sans-serif;
+    //  font-weight: 600;
+    @include mobile-page-header;
 }
 .card-details__title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: whitesmoke;
-       font-family: "Montserrat", sans-serif;
-     font-weight: 600;
+  @include mobile-page-header;
+
 }
 
 .card-details__image-container {
@@ -55,16 +64,15 @@ border-radius: 1rem;
   flex-wrap: wrap;
    color: whitesmoke;
   justify-content: space-between;
-       font-family: "Montserrat", sans-serif;
-     font-weight: 400;
+  @include mobile-body-copy ;
 }
 
 .card-details__info p {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-       font-family: "Montserrat", sans-serif;
-     font-weight: 300;
+  
+     @include mobile-body-copy ;
      font-style: italic;
 }
 
@@ -91,16 +99,19 @@ border-radius: 1rem;
 }
 
 .card-details__list-item {
-  background: white;
+  background: rgb(218, 212, 212);
   padding: 0.8rem;
   margin: 0.5rem 0;
   border-radius: 6px;
+  color: $warm-grey;
+  @include mobile-body-copy;
 }
 
 .card-details__compatibility p {
   margin: 0.5rem 0;
   background-color: white;
   padding: 16px;
+  @include mobile-body-copy;
 }
 
 /* Responsive Design */

@@ -42,3 +42,4 @@ function ZodiacCard() {
 }
 
 export default ZodiacCard;
+                                                                                              

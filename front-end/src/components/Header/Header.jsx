@@ -9,7 +9,7 @@ function Header() {
           <img src={logo} alt="logo" className="logo-img" />
         </a>
         <div className="header__info">
-          <h1>Explore the Magic of Your Zodiac</h1>
+          <h1 className="header__subtitle">Explore the Magic of Your Zodiac</h1>
         </div>
       </div>
     </div>
