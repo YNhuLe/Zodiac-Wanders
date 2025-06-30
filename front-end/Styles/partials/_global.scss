@@ -1,0 +1,13 @@
+@use "./mixin" as *;
+@use "./typography" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}

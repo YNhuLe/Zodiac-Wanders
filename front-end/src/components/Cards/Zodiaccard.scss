@@ -1,21 +1,26 @@
-
+@use "../../../styles/partials/mixin.scss" as *;
+@use "../../../styles/partials/variables.scss" as *;
 .section {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to right, #562a75, #8c77a0, #4f4854);
     display: flex;
     justify-content: center; 
     align-items: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
+    background-image: url(../../assets/images/bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7rem;
 }
 
+
 .allcards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width: 80%;
+
+    gap: 1.25rem;
+    width:calc(100% - 2rem);
     max-width: 900px;
     justify-content: center;
+    @include flex(column, center, normal);
 }
 
 .card {
@@ -23,12 +28,12 @@
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background: rgba(228, 231, 235, 0.3);
+background: rgb(107 111 116 / .3);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px); 
 gap: 1.25rem;
 padding: 16px;
-height: 128px;
+height:12rem;
 border-radius: 10px;
 box-shadow: 0px 4px 10px rgba(221, 216, 216, 0.2);
 border: 1px solid rgba(255, 255, 255, 0.2);
@@ -39,15 +44,25 @@ transition: transform 0.3s ease-in-out;
 
 .card:hover {
     transform: scale(1.05);
+    background: rgba(213, 215, 218, 0.3);
 }
 
 
 .card__zodiac {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: rgb(224, 214, 214);
     text-align: center;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 600;
+}
+
+
+.card__date{
+     color: rgb(224, 185, 247);
+        font-family: "Montserrat", sans-serif;
+     font-weight: 400;
 }
 
 
