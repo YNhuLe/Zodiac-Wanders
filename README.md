@@ -1,8 +1,8 @@
-# 🌟 Zodiac Wonders 🌟
+# 🌟 Zodiac Wanders 🌟
 
 Welcome to **Zodiac Wonders** – an enchanting web experience where the cosmos
 meets code! ✨🔮
-
+🎥 [Watch the demo on YouTube](https://youtu.be/N6jknc-Xs4Q)
 ## 🚀 Getting Started
 
 To explore the magic of Zodiac Wonders, follow these simple steps:
