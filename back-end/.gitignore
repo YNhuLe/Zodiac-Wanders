@@ -1,2 +1,6 @@
-node_modules
+node_modules/
 .env
+db/zodiac.db
+db/zodiac.db-wal
+db/zodiac.db-shm
+public/uploads/*
