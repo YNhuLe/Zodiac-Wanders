@@ -1,0 +1,22 @@
+@use "../../../../Styles/partials/variables" as *;
+@use "../../../../Styles/partials/mixin" as *;
+
+.compat-preview {
+  background: $lavender-soft;
+
+  &__grid {
+    display: grid;
+    gap: $space-lg;
+    margin-bottom: $space-xl;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__cta {
+    text-align: center;
+
+    a { text-decoration: none; }
+  }
+}

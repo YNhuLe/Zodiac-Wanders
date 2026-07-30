@@ -1,0 +1,75 @@
+@use "../../../../Styles/partials/variables" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-sm;
+  font-weight: 600;
+  border-radius: $radius-md;
+  transition: all $transition-base;
+  white-space: nowrap;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--sm {
+    padding: $space-sm $space-md;
+    font-size: 0.8125rem;
+  }
+
+  &--md {
+    padding: 0.625rem $space-lg;
+    font-size: 0.9375rem;
+  }
+
+  &--lg {
+    padding: 0.875rem $space-xl;
+    font-size: 1rem;
+  }
+
+  &--primary {
+    background: $purple-primary;
+    color: $white;
+    box-shadow: $shadow-md;
+
+    &:hover:not(:disabled) {
+      background: $purple-dark;
+      transform: translateY(-1px);
+      box-shadow: $shadow-lg;
+    }
+  }
+
+  &--secondary {
+    background: $lavender;
+    color: $purple-dark;
+
+    &:hover:not(:disabled) {
+      background: $purple-light;
+      color: $white;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: $purple-primary;
+    border: 2px solid $purple-primary;
+
+    &:hover:not(:disabled) {
+      background: $purple-primary;
+      color: $white;
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    color: $gray-600;
+
+    &:hover:not(:disabled) {
+      background: $gray-100;
+      color: $purple-primary;
+    }
+  }
+}

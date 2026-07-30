@@ -1,0 +1,66 @@
+@use "../../../../Styles/partials/variables" as *;
+@use "../../../../Styles/partials/mixin" as *;
+
+.site-footer {
+  background: $gray-900;
+  color: $gray-300;
+  padding-top: $space-3xl;
+
+  &__inner {
+    display: grid;
+    gap: $space-2xl;
+    padding-bottom: $space-2xl;
+
+    @include tablet {
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+
+  &__title {
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+    font-weight: 700;
+    color: $white;
+    display: block;
+    margin-bottom: $space-sm;
+  }
+
+  &__tagline {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    max-width: 28rem;
+    color: $gray-400;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-xl;
+  }
+
+  &__heading {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $purple-light;
+    margin-bottom: $space-md;
+  }
+
+  &__link {
+    display: block;
+    font-size: 0.875rem;
+    padding: $space-xs 0;
+    color: $gray-400;
+    transition: color $transition-fast;
+
+    &:hover { color: $white; }
+  }
+
+  &__bottom {
+    border-top: 1px solid $gray-800;
+    padding-block: $space-lg;
+    font-size: 0.8125rem;
+    color: $gray-500;
+    text-align: center;
+  }
+}

@@ -1,0 +1,52 @@
+@use "../../../../Styles/partials/variables" as *;
+
+.toast-container {
+  position: fixed;
+  top: $space-lg;
+  right: $space-lg;
+  z-index: $z-toast;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  max-width: 24rem;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-md;
+  padding: $space-md $space-lg;
+  border-radius: $radius-md;
+  background: var(--color-surface-elevated);
+  box-shadow: $shadow-lg;
+  font-size: 0.875rem;
+  animation: toastIn 0.3s ease;
+
+  &--success { border-left: 4px solid $success; }
+  &--error { border-left: 4px solid $danger; }
+  &--info { border-left: 4px solid $purple-primary; }
+  &--warning { border-left: 4px solid $warning; }
+
+  &__close {
+    font-size: 1.25rem;
+    color: $gray-400;
+    line-height: 1;
+    padding: $space-xs;
+
+    &:hover { color: $gray-700; }
+  }
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(1rem); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 480px) {
+  .toast-container {
+    left: $space-md;
+    right: $space-md;
+    max-width: none;
+  }
+}

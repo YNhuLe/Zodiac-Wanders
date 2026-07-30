@@ -1,0 +1,195 @@
+@use "../../../../Styles/partials/variables" as *;
+@use "../../../../Styles/partials/mixin" as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: $z-navbar;
+  background: var(--color-navbar-bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: $shadow-sm;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    gap: $space-md;
+    position: relative;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--color-primary-dark);
+    flex-shrink: 0;
+  }
+
+  &__logo { border-radius: $radius-full; }
+
+  &__brand-text {
+    display: none;
+    @include tablet { display: inline; }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+
+    @include tablet { display: none; }
+  }
+
+  &__theme-toggle {
+    font-size: 1.25rem;
+    padding: $space-sm;
+    border-radius: $radius-full;
+    transition: background $transition-fast;
+
+    &:hover { background: var(--color-accent-bg); }
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: $space-sm;
+
+    span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--color-text);
+      border-radius: 2px;
+      transition: all $transition-base;
+    }
+
+    &--open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    &--open span:nth-child(2) { opacity: 0; }
+    &--open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    @include tablet { display: none; }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: $space-lg;
+    flex-direction: column;
+    gap: $space-lg;
+    box-shadow: $shadow-md;
+
+    &--open { display: flex; }
+
+    @include tablet {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      background: none;
+      border: none;
+      padding: 0;
+      box-shadow: none;
+      gap: $space-xl;
+      margin-left: auto;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+    @include tablet { flex-direction: row; gap: $space-lg; }
+  }
+
+  &__link {
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    padding: $space-sm 0;
+    transition: color $transition-fast;
+    position: relative;
+
+    &:hover { color: var(--color-primary); }
+
+    &--active {
+      color: var(--color-primary);
+      font-weight: 600;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--color-primary);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__user-actions {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+    flex-wrap: wrap;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    padding: $space-sm $space-md;
+    border-radius: $radius-full;
+    background: var(--color-accent-bg);
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: background $transition-fast;
+
+    &:hover { opacity: 0.9; }
+  }
+
+  &__login {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    &:hover { color: var(--color-primary); }
+  }
+
+  &__logout {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    &:hover { color: var(--color-primary); }
+  }
+
+  &__profile-name {
+    max-width: 8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @include tablet {
+    &__actions {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__theme-toggle {
+      position: static;
+    }
+  }
+}

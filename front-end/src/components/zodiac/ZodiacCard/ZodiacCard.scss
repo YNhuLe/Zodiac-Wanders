@@ -1,0 +1,79 @@
+@use "../../../../Styles/partials/variables" as *;
+@use "../../../../Styles/partials/mixin" as *;
+
+.zodiac-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  // frosted tile: sheen gradient layered over the glass tint, both behind the
+  // content, so the icon and labels stay crisp
+  &__inner {
+    background: var(--color-glass-sheen), var(--color-glass-bg);
+    border-radius: $radius-lg;
+    padding: $space-lg;
+    text-align: center;
+    box-shadow: $shadow-md, inset 0 1px 0 var(--color-glass-highlight);
+    border: 1px solid var(--color-glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all $transition-base;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-sm;
+  }
+
+  &:hover &__inner {
+    transform: translateY(-4px);
+    box-shadow: $shadow-lg, inset 0 1px 0 var(--color-glass-highlight);
+    border-color: $purple-light;
+  }
+
+  &:focus-visible &__inner {
+    outline: 2px solid $purple-primary;
+    outline-offset: 2px;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    transition: transform $transition-base;
+  }
+
+  &:hover &__icon {
+    transform: scale(1.1);
+  }
+
+  &__name {
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+    font-weight: 700;
+    color: var(--color-heading);
+  }
+
+  &__dates {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+  }
+
+  &__element {
+    display: inline-block;
+    padding: 0.125rem 0.625rem;
+    background: $lavender;
+    color: $purple-dark;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    border-radius: $radius-full;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__flower {
+    font-size: 0.75rem;
+    color: $purple-primary;
+    font-style: italic;
+    margin-top: auto;
+  }
+}

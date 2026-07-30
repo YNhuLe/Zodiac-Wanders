@@ -1,0 +1,32 @@
+@use "../../../../Styles/partials/variables" as *;
+@use "../../../../Styles/partials/mixin" as *;
+
+.zodiac-grid {
+  background: rgba(var(--color-surface-rgb), 0.7);
+  scroll-margin-top: 4rem; // clears the sticky navbar on #zodiac-grid jumps
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+    gap: $space-lg;
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__loading,
+  &__error {
+    text-align: center;
+    padding: $space-3xl;
+    color: $gray-500;
+  }
+
+  &__error {
+    color: $danger;
+  }
+}

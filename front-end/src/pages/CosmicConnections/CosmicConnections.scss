@@ -1,0 +1,66 @@
+@use "../../../Styles/partials/variables" as *;
+@use "../../../Styles/partials/mixin" as *;
+
+.cosmic-page {
+  background: linear-gradient(180deg, $lavender-soft 0%, $white 100%);
+  min-height: 60vh;
+
+  &__header {
+    margin-bottom: $space-2xl;
+    text-align: center;
+
+    .section-subtitle {
+      margin-inline: auto;
+    }
+  }
+
+  &__hero-card {
+    background: var(--color-surface);
+    border-radius: $radius-xl;
+    padding: clamp(2rem, 5vw, 4rem);
+    text-align: center;
+    box-shadow: $shadow-lg;
+    max-width: 36rem;
+    margin-inline: auto;
+
+    .section-subtitle {
+      margin-inline: auto;
+      margin-bottom: $space-xl;
+    }
+
+    a { text-decoration: none; }
+  }
+
+  &__empty {
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+  }
+
+  &__section {
+    margin-bottom: $space-3xl;
+  }
+
+  &__section-title {
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+    font-weight: 700;
+    color: $gray-900;
+    margin-bottom: $space-sm;
+  }
+
+  &__section-desc {
+    font-size: 0.875rem;
+    color: $gray-500;
+    margin-bottom: $space-xl;
+  }
+
+  &__grid {
+    display: grid;
+    gap: $space-lg;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    }
+  }
+}

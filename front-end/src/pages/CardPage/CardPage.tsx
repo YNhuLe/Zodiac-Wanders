@@ -1,14 +1,5 @@
-import React from "react";
-import CardDetails from "../../components/CardDetail/CardDetail";
-import Footer from "../../components/Footer/Footer";
+import CardDetail from "../../components/zodiac/CardDetail/CardDetail";
 
-function CardPage() {
-  return (
-    <>
-      <CardDetails />
-      <Footer />
-    </>
-  );
+export default function CardPage() {
+  return <CardDetail />;
 }
-
-export default CardPage;

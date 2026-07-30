@@ -1,0 +1,64 @@
+@use "../../../../Styles/partials/variables" as *;
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: $z-modal;
+  padding: $space-md;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal {
+  background: var(--color-surface-elevated);
+  border-radius: $radius-xl;
+  width: 100%;
+  max-width: 32rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: $shadow-xl;
+  animation: slideUp 0.3s ease;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $space-lg $space-xl;
+    border-bottom: 1px solid $gray-100;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $gray-900;
+  }
+
+  &__close {
+    color: $gray-400;
+    padding: $space-xs;
+    border-radius: $radius-sm;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $gray-700;
+    }
+  }
+
+  &__body {
+    padding: $space-xl;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}

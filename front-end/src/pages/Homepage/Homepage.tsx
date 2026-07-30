@@ -1,17 +1,15 @@
-import React from "react";
-import Header from "../../components/Header/Header";
-import ZodiacCard from "../../components/Cards/ZodiacCard";
-import Footer from "../../components/Footer/Footer";
-import CardDetails from "../../components/CardDetail/CardDetail";
+import Hero from "../../components/layout/Hero/Hero";
+import ZodiacGrid from "../../components/zodiac/ZodiacGrid/ZodiacGrid";
+import CompatibilityPreview from "../../components/home/CompatibilityPreview/CompatibilityPreview";
+import CommunityPreview from "../../components/home/CommunityPreview/CommunityPreview";
 
-function Homepage() {
+export default function Homepage() {
   return (
     <>
-      <Header />
-      <ZodiacCard />
-      <Footer />
+      <Hero />
+      <ZodiacGrid />
+      <CompatibilityPreview />
+      <CommunityPreview />
     </>
   );
 }
-
-export default Homepage;

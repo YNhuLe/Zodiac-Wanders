@@ -1,0 +1,49 @@
+@use "../../../../Styles/partials/variables" as *;
+@use "../../../../Styles/partials/mixin" as *;
+
+.community-preview {
+  background: var(--color-surface);
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-md;
+    margin-bottom: $space-xl;
+  }
+
+  &__stat {
+    text-align: center;
+    padding: $space-lg;
+    background: $lavender-soft;
+    border-radius: $radius-lg;
+  }
+
+  &__stat-value {
+    display: block;
+    font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+    font-weight: 800;
+    color: $purple-primary;
+  }
+
+  &__stat-label {
+    font-size: 0.75rem;
+    color: $gray-500;
+    font-weight: 500;
+  }
+
+  &__posts {
+    display: grid;
+    gap: $space-md;
+    margin-bottom: $space-xl;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__cta {
+    text-align: center;
+
+    a { text-decoration: none; }
+  }
+}

@@ -1,0 +1,91 @@
+@use "../../../../Styles/partials/variables" as *;
+
+.compat-card__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.compat-card {
+  background: var(--color-surface);
+  border-radius: $radius-lg;
+  padding: $space-lg;
+  border: 1px solid $gray-100;
+  box-shadow: $shadow-sm;
+  transition: all $transition-base;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-2px);
+  }
+
+  &--high { border-left: 4px solid $success; }
+  &--moderate { border-left: 4px solid $warning; }
+  &--challenging { border-left: 4px solid $danger; }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+    margin-bottom: $space-md;
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+  }
+
+  &__sign {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: $gray-900;
+  }
+
+  &__tier {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $gray-500;
+  }
+
+  &__percent {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+    margin-bottom: $space-md;
+  }
+
+  &__bar {
+    flex: 1;
+    height: 6px;
+    background: $gray-100;
+    border-radius: $radius-full;
+    overflow: hidden;
+  }
+
+  &__fill {
+    height: 100%;
+    border-radius: $radius-full;
+    background: linear-gradient(90deg, $purple-primary, $purple-light);
+    transition: width $transition-slow;
+  }
+
+  &--high &__fill { background: linear-gradient(90deg, $success, #34d399); }
+  &--moderate &__fill { background: linear-gradient(90deg, $warning, #fbbf24); }
+  &--challenging &__fill { background: linear-gradient(90deg, $danger, #f87171); }
+
+  &__value {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $gray-700;
+    min-width: 2.5rem;
+  }
+
+  &__reason {
+    font-size: 0.8125rem;
+    color: $gray-500;
+    line-height: 1.6;
+  }
+}

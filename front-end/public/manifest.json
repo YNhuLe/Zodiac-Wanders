@@ -1,0 +1,18 @@
+{
+  "name": "Zodiac Wanders",
+  "short_name": "Zodiac",
+  "description": "Explore zodiac signs, find cosmic compatibility, and connect with kindred spirits.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f3ff",
+  "theme_color": "#7c3aed",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+@use "../../../../Styles/partials/variables" as *;
+@use "../../../../Styles/partials/mixin" as *;
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg);
+  // color: var(--color-hero-text);
+    color: var(--color-hero-text);
+  min-height: 100vh;
+
+  background:
+    var(--color-hero-overlay),
+    url("../../../assets/images/bc.jpg") center center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding-block: clamp(4rem, 10vw, 8rem);
+  text-align: center;
+
+  &__stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &__star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: $white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 3s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.3s);
+    top: calc(10% + var(--i) * 4%);
+    left: calc(5% + var(--i) * 4.5%);
+  }
+
+ 
+  &__eyebrow {
+    font-size: clamp(0.75rem, 0.7rem + 0.3vw, 0.875rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-hero-eyebrow);
+    margin-bottom: $space-md;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  &__title {
+    font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: $space-lg;
+    color: var(--color-hero-text);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  &__title-accent {
+    background: linear-gradient(90deg, var(--color-hero-accent-start), var(--color-hero-accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+  }
+
+  &__subtitle {
+    font-size: clamp(0.95rem, 0.85rem + 0.5vw, 1.125rem);
+    line-height: 1.7;
+    color: var(--color-hero-text-muted);
+    max-width: 36rem;
+    margin-inline: auto;
+    margin-bottom: $space-2xl;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+    justify-content: center;
+
+    a { text-decoration: none; }
+
+    .btn--outline {
+      border-color: var(--color-hero-outline-border);
+      color: var(--color-hero-text);
+
+      &:hover {
+        background: var(--color-hero-outline-hover-bg);
+        color: var(--color-hero-outline-hover-text);
+        border-color: var(--color-hero-outline-hover-bg);
+      }
+    }
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.8; transform: scale(1); }
+}
